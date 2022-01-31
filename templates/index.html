@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+
+  <!-- Carousel Section -->
+  <div id="carousel-pic" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-pic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-pic" data-slide-to="1"></li>
+      <li data-target="#carousel-pic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 pic" src="static/images/pic2.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 pic" src="static/images/pic3.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 pic" src="static/images/pic4.jpg" alt="Third slide">
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="container-fluid">
+      <div class="row feature-row">
+        <div class="col-lg-4">
+          <span class="center-pic">
+            <img class="features-pic" src="static/images/pic6_clock.jpg" alt="red clock">
+          </span>
+          <h1>Quick Prediction</h1>
+          <p class="para">We have used light ML model that can load within no time without compromising on the accuracy of the prediction. Light models quickly load which helps in better response of the page.</p>
+        </div>
+        <div class="col-lg-4">
+          <span class="center-pic">
+            <img class="features-pic" src="static/images/pic7_database.jpg" alt="Database">
+          </span>
+          <h1>Wide Range</h1>
+          <p class="para">This Web-App provides a wide range of predicting the contamination multiple infectious disease like Kidney disease, Diabetes, Liver Infection, Heart Disease & Breat Cancer.</p>
+        </div>
+        <div class="col-lg-4">
+          <span class="center-pic">
+            <img class="features-pic" src="static/images/pic5_accuracy.jpg" alt="high accuracy">
+          </span>
+          <h1>Highly Accurate</h1>
+          <p class="para">Though this app provides a wide range and high speed the accuracy has not been compromised Hyper-parameters have been selected very carefully so that the accuracy is not hampered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Description Section -->
+  <div class="description">
+    <div class="container-fluid">
+      <div class="row description-row">
+        <div class="col-lg-8">
+          <h1 class="description-heading">Less Doctors: India is facing a huge shortage of Doctors</h3>
+          <p class="description-para">The shortage of prfessionals like doctors, nurses, technicians and infrastructure as given by the report of WHO
+          that 0.76 doctors and 2.09 nurses are present per 1000 people. Additionally, Indian healthcare is also facing acute
+          shortage of hospital beds with 1.3 hospital beds per 1000 people.</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="description-pic" src="static/images/pic8_doctor.jpg" alt="doctors">
+        </div>
+      </div>
+      <div class="row description-row">
+        <div class="col-lg-4">
+          <img class="description-pic" src="static/images/pic9_accessability.jpg" alt="technology">
+        </div>
+        <div class="col-lg-8">
+          <h1 class="description-heading">Low Accessibility: Non-uniform Accessibility to Healthcare across nation</h3>
+          <p class="description-para">The physical access to hospitals is stil the major barrier to both preventive and curative health services, and also
+          the major differences between the Rural and the Urban India. By making use of web technology and AI people in remote areas
+          can also get access to the health-care.</p>
+        </div>
+      </div>
+      <div class="row description-row">
+        <div class="col-lg-8">
+          <h1 class="description-heading">Affordability: Good healthcare facilities still dream of the common people in India</h3>
+          <p class="description-para">It is the biggest problem many poor and marginalised are hit the most as by the government estimates approx. 63 million
+          people are faced with poverty every year because of their healthcare expenditure. Using the technology in a better way
+          healthcare can be made affordable for everyone.</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="description-pic" src="static/images/pic10_affordable.jpg" alt="affordable">
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}
