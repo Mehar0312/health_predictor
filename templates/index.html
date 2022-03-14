@@ -4,21 +4,23 @@
 {% block body %}
 
   <!-- Carousel Section -->
-  <div id="carousel-pic" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-pic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-pic" data-slide-to="1"></li>
-      <li data-target="#carousel-pic" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100 pic" src="static/images/pic2.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100 pic" src="static/images/pic3.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100 pic" src="static/images/pic4.jpg" alt="Third slide">
+  <div class="container-fluid">
+    <div id="carousel-pic" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-pic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-pic" data-slide-to="1"></li>
+        <li data-target="#carousel-pic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="pic" src="static/images/pic2.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="pic" src="static/images/pic3.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="pic" src="static/images/pic4.jpg" alt="Third slide">
+        </div>
       </div>
     </div>
   </div>
@@ -31,24 +33,24 @@
       <div class="row feature-row">
         <div class="col-lg-4">
           <span class="center-pic">
-            <img class="features-pic" src="static/images/pic6_clock.jpg" alt="red clock">
+            <img class="features-pic my-4" src="static/images/pic6_clock.jpg" alt="red clock">
           </span>
           <h1>Quick Prediction</h1>
-          <p class="para">We have used light ML model that can load within no time without compromising on the accuracy of the prediction. Light models quickly load which helps in better response of the page.</p>
+          <p class="para my-4">We have used light ML model that can load within no time without compromising on the accuracy of the prediction. Light models quickly load which helps in better response of the page.</p>
         </div>
         <div class="col-lg-4">
           <span class="center-pic">
-            <img class="features-pic" src="static/images/pic7_database.jpg" alt="Database">
+            <img class="features-pic my-4" src="static/images/pic7_database.jpg" alt="Database">
           </span>
           <h1>Wide Range</h1>
-          <p class="para">This Web-App provides a wide range of predicting the contamination multiple infectious disease like Kidney disease, Diabetes, Liver Infection, Heart Disease & Breat Cancer.</p>
+          <p class="para my-4">This Web-App provides a wide range of predicting the contamination multiple infectious disease like Kidney disease, Diabetes, Liver Infection, Heart Disease & Breat Cancer.</p>
         </div>
         <div class="col-lg-4">
           <span class="center-pic">
-            <img class="features-pic" src="static/images/pic5_accuracy.jpg" alt="high accuracy">
+            <img class="features-pic my-4" src="static/images/pic5_accuracy.jpg" alt="high accuracy">
           </span>
           <h1>Highly Accurate</h1>
-          <p class="para">Though this app provides a wide range and high speed the accuracy has not been compromised Hyper-parameters have been selected very carefully so that the accuracy is not hampered.</p>
+          <p class="para my-4">Though this app provides a wide range and high speed the accuracy has not been compromised Hyper-parameters have been selected very carefully so that the accuracy is not hampered.</p>
         </div>
       </div>
     </div>
@@ -94,5 +96,36 @@
       </div>
     </div>
   </div>
+
+  <hr>
+
+
+  
+
+  <!-- About Section -->
+  <!-- <div class="about">
+    <div class="container-fluid">
+      <div id="carousel-about" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h3 class="about-text my-3">Placed in Oracle Finanace with 8.22 lpa.</h3>
+            <img class="about-img my-3" src="static/emp_img/mehar.jpg" alt="mehar">
+            <p><em>Mehar Singh, Backend Developer</em></p>
+          </div>
+          <div class="carousel-item">
+            <h3 class="about-text my-3">Placed in Oracle Finanace with 8.22 lpa.</h3>
+            <img class="about-img my-3" src="static/emp_img/alex.jpeg" alt="alex">
+            <p><em>Alex Manuvel, Machine Learning Engineer</em></p>
+          </div>
+        </div>
+        <a class="carousel-control-prev prev-about" role="button" href="#carousel-about" data-slide="prev">
+          <span class="carousel-control-prev-icon text-dark" ><i class="fas fa-angle-left fa-3x"></i></span>
+        </a>
+        <a class="carousel-control-next next-about" role="button" href="#carousel-about" data-slide="next">
+          <span class="carousel-control-next-icon text-dark"><i class="fas fa-angle-right fa-3x"></i></span>
+        </a>
+      </div>
+    </div>
+  </div> -->
 
 {% endblock body %}

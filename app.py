@@ -1,7 +1,37 @@
 # from crypt import methods
-from flask import Flask, render_template
+# from urllib import response
+from flask import Flask, render_template, jsonify, request
+# import requests
+# import pickle
+# from bs4 import BeautifulSoup
+# import numpy as np
+# import pandas as pd
+
 
 app = Flask(__name__)
+
+# def findinfo(cname):
+#   totalresult = []
+#   country = cname
+#   url = "https://www.worldometers.info/coronavirus/country/{countryname}/".format(country)
+#   response = requests.get(url)
+#   if response.status_code == 200:
+#     soup = BeautifulSoup(response.content, 'html.parser')
+#     result = soup.find_all('div', class_="maincounter-number")
+#     for i in result:
+#       totalresult.append(i.find("span".text))
+#   else:
+#     totalresult.append("No Result")
+#   return totalresult  
+
+# @app.route("/info/", methods = ['GET'])
+# def findinformation():
+#   country = request.get("country")
+#   try:
+#     return jsonify({"Total Cases: ": findinfo(country)[0], "Total Deaths: ": findinfo(country)[1], "Total Recovered: ": findinfo(country)[2]})
+#   except:
+#     return jsonify({"No country found!!"})
+
 
 @app.route('/')
 def index():

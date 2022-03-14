@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 hr {
   border-style: none;
   border-top-style: dotted;
   border-color: #333;
   border-width: 7px;
   width: 8%;
-  padding-top: 1%;
+  padding-top: 10%;
   padding-bottom: 1%;
 }
 
@@ -13,22 +20,28 @@ hr {
   position: fixed;
   z-index: 99;
   width: 100%;
-
 }
 
 /* Carousel Section */
 #carousel-pic {
-  padding: 4% 1% 0;
-  margin-bottom: 50px;
+  padding-top: 3.8%;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .pic {
   height: 540px;
-  width: 80%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* Features Section */
 .features {
+  display: flex;
+  align-items: center;
   text-align: center;
+  padding: 5rem 0;
 }
 .features-pic {
   height: 150px;
@@ -57,6 +70,23 @@ hr {
   font-weight: 300;
   font-size: 18px;
   text-align: justify;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+.about-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.prev-about, .next-about {
+  padding: 0 15%;
 }
 
 /* Diseases Pages */
