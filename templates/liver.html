@@ -11,50 +11,50 @@
       <img src="/static/images/pic14_liver.jpg" alt="liver" class="disease-img">
     </div>
     <div class="col-6 disease-input-section">
-      <form class="" action="/liver" method="POST">
+      <form class="" action="{{url_for('liver_predict')}}" method="POST">
         <div class="disease-form">
           <div class="mb-3">
             <label for="age" class="form-label disease_label">Age</label>
-            <input type="number" class="form-control disease-input" id="age" aria-describedby="age" min="1" max="100" placeholder="1 - 100">
+            <input type="number" class="form-control disease-input" name="a" id="age" aria-describedby="age" min="1" max="100" placeholder="1 - 100">
           </div>
           <div class="mb-3">
             <label for="gender" class="form-label disease_label">Gender</label>
-            <input type="number" class="form-control disease-input" id="gender" aria-describedby="gender" placeholder="0 (Female) or 1 (Male)">
+            <input type="number" class="form-control disease-input" name="b" id="gender" aria-describedby="gender" placeholder="0 (Female) or 1 (Male)">
           </div>
           <div class="mb-3">
             <label for="total_bilirubin" class="form-label disease_label">Total Bilirubin</label>
-            <input type="number" class="form-control disease-input" id="total_bilirubin" aria-describedby="total_bilirubin" min="0.0" max="75.0" placeholder="0.0 - 75.0">
+            <input type="number" class="form-control disease-input" name="c" id="total_bilirubin" aria-describedby="total_bilirubin" min="0.0" max="75.0" placeholder="0.0 - 75.0">
           </div>
           <div class="mb-3">
             <label for="direct_bilirubin" class="form-label disease_label">Direct Bilirubin</label>
-            <input type="number" class="form-control disease-input" id="direct_bilirubin" aria-describedby="direct_bilirubin" min="0.0" max="20.0" placeholder="0.0 - 20.0">
+            <input type="number" class="form-control disease-input" name="d" id="direct_bilirubin" aria-describedby="direct_bilirubin" min="0.0" max="20.0" placeholder="0.0 - 20.0">
           </div>
           <div class="mb-3">
             <label for="alkaline_phosphate" class="form-label disease_label">Alkaline Phosphate</label>
-            <input type="number" class="form-control disease-input" id="alkaline_phosphate" aria-describedby="alkaline_phosphate" min="60" max="2500" placeholder="60 - 2500">
+            <input type="number" class="form-control disease-input" name="e" id="alkaline_phosphate" aria-describedby="alkaline_phosphate" min="60" max="2500" placeholder="60 - 2500">
           </div>
           <div class="mb-3">
             <label for="alamine_aminotransferace" class="form-label disease_label">Alamine Aminotranferace</label>
-            <input type="number" class="form-control disease-input" id="alamine_aminotransferace" aria-describedby="alamine_aminotransferace" min="10" max="2000" placeholder="10 - 2000">
+            <input type="number" class="form-control disease-input" name="f" id="alamine_aminotransferace" aria-describedby="alamine_aminotransferace" min="10" max="2000" placeholder="10 - 2000">
           </div>
           <div class="mb-3">
             <label for="aspartate_aminotransferace" class="form-label disease_label">Aspartate Aminotranferace</label>
-            <input type="number" class="form-control disease-input" id="aspartate_aminotransferace" aria-describedby="aspartate_aminotransferace" min="10" max="5000" placeholder="10 - 5000">
+            <input type="number" class="form-control disease-input" name="g" id="aspartate_aminotransferace" aria-describedby="aspartate_aminotransferace" min="10" max="5000" placeholder="10 - 5000">
           </div>
           <div class="mb-3">
             <label for="total_protein" class="form-label disease_label">Total Protein</label>
-            <input type="number" class="form-control disease-input" id="total_protein" aria-describedby="total_protein" min="2.0" max="10.0" placeholder="2.0 - 10.0">
+            <input type="number" class="form-control disease-input" name="h" id="total_protein" aria-describedby="total_protein" min="2.0" max="10.0" placeholder="2.0 - 10.0">
           </div>
           <div class="mb-3">
             <label for="albumin" class="form-label disease_label">Albumin</label>
-            <input type="number" class="form-control disease-input" id="albumin" aria-describedby="albumin" min="0.0" max="6.0" placeholder="0.0 - 6.0">
+            <input type="number" class="form-control disease-input" name="i" id="albumin" aria-describedby="albumin" min="0.0" max="6.0" placeholder="0.0 - 6.0">
           </div>
           <div class="mb-3">
             <label for="albumin_globumin_ratio" class="form-label disease_label">Albumin and Globumin Ratio</label>
-            <input type="number" class="form-control disease-input" id="albumin_globumin_ratio" aria-describedby="albumin_globumin_ratio" min="0.0" max="3.0" placeholder="0.0 - 3.0">
+            <input type="number" class="form-control disease-input" name="j" id="albumin_globumin_ratio" aria-describedby="albumin_globumin_ratio" min="0.0" max="3.0" placeholder="0.0 - 3.0">
           </div>  
         </div>
-        <button type="submit" class="btn btn-outline-primary mt-5">Submit</button>
+        <button type="submit" class="btn btn-outline-primary mt-5" value="liver_predict">Submit</button>
       </form>
     </div>
   </div>

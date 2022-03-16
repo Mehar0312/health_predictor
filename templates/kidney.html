@@ -11,44 +11,44 @@
       <img src="/static/images/pic15_kidney.jpeg" alt="kidney" class="disease-img">
     </div>
     <div class="col-6 disease-input-section">
-      <form class="" action="/kidney" method="POST">
+      <form class="" action="{{url_for('kidney_predict')}}" method="POST">
         <div class="disease-form">
           <div class="mb-3">
             <label for="hypertension" class="form-label disease_label">Hypertension</label>
-            <input type="number" class="form-control disease-input" id="hypertension" aria-describedby="hypertension" placeholder="0 (No) or 1 (Yes)">
+            <input type="number" class="form-control disease-input" name="a" id="hypertension" aria-describedby="hypertension" placeholder="0 (No) or 1 (Yes)">
           </div>
           <div class="mb-3">
             <label for="diabetes_mellitus" class="form-label disease_label">Diabetes Mellitus</label>
-            <input type="number" class="form-control disease-input" id="diabetes_mellitus" aria-describedby="diabetes_mellitus" placeholder="0 (No) or 1 (Yes)">
+            <input type="number" class="form-control disease-input" name="b" id="diabetes_mellitus" aria-describedby="diabetes_mellitus" placeholder="0 (No) or 1 (Yes)">
           </div>
           <div class="mb-3">
             <label for="albumin" class="form-label disease_label">Albumin</label>
-            <input type="number" class="form-control disease-input" id="albumin" aria-describedby="albumin" min="0" max="5" placeholder="0 - 5">
+            <input type="number" class="form-control disease-input" name="c" id="albumin" aria-describedby="albumin" min="0" max="5" placeholder="0 - 5">
           </div>
           <div class="mb-3">
             <label for="blood_glucose_random" class="form-label disease_label">Blood Glucose Random</label>
-            <input type="number" class="form-control disease-input" id="blood_glucose_random" aria-describedby="blood_glucose_random" min="20" max="500" placeholder="20 - 500">
+            <input type="number" class="form-control disease-input" name="d" id="blood_glucose_random" aria-describedby="blood_glucose_random" min="20" max="500" placeholder="20 - 500">
           </div>
           <div class="mb-3">
             <label for="pus_cell" class="form-label disease_label">Pus Cell</label>
-            <input type="number" class="form-control disease-input" id="pus_cell" aria-describedby="pus_cell" placeholder="0 (Normal) or 1 (Abnormal)">
+            <input type="number" class="form-control disease-input" name="e" id="pus_cell" aria-describedby="pus_cell" placeholder="0 (Normal) or 1 (Abnormal)">
           </div>
           <div class="mb-3">
             <label for="pedal_edema" class="form-label disease_label">Pedal Edema</label>
-            <input type="number" class="form-control disease-input" id="pedal_edema" aria-describedby="pedal_edema" placeholder="0 (No) or 1 (Yes)">
+            <input type="number" class="form-control disease-input" name="f" id="pedal_edema" aria-describedby="pedal_edema" placeholder="0 (No) or 1 (Yes)">
           </div>
           <div class="mb-3">
             <label for="blood_urea" class="form-label disease_label">Blood Urea</label>
-            <input type="number" class="form-control disease-input" id="blood_urea" aria-describedby="blood_urea" min="1.0" max="400.0" placeholder="1.0 - 400.0">
+            <input type="number" class="form-control disease-input" name="g" id="blood_urea" aria-describedby="blood_urea" min="1.0" max="400.0" placeholder="1.0 - 400.0">
           </div>
           <div class="mb-3">
             <label for="anemia" class="form-label disease_label">Anemia</label>
-            <input type="number" class="form-control disease-input" id="anemia" aria-describedby="anemia" placeholder="0 (No) or 1 (Yes)">
+            <input type="number" class="form-control disease-input" name="h" id="anemia" aria-describedby="anemia" placeholder="0 (No) or 1 (Yes)">
           </div>
         </div>
         
     
-        <button type="submit" class="btn btn-outline-primary mt-5">Submit</button>
+        <button type="submit" class="btn btn-outline-primary mt-5" value="kidney_predict">Submit</button>
       </form>
     </div>
   </div>

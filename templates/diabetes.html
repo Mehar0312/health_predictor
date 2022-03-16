@@ -11,34 +11,34 @@
       <img src="/static/images/pic12_diabetes.jpg" alt="diabetes" class="disease-img">
     </div>
     <div class="col-6 disease-input-section">
-      <form class="" action="/" method="POST">
+      <form class="" action="{{url_for('diabetes_predict')}}" method="POST">
         <div class="disease-form">
           <div class="mb-3">
             <label for="glucose" class="form-label disease_label">Glucose</label>
-            <input type="number" class="form-control disease-input" id="glucose" aria-describedby="glucose" min="0" max="200" placeholder="0 - 200">
+            <input type="number" class="form-control disease-input" name="a" id="glucose" aria-describedby="glucose" min="0" max="200" placeholder="0 - 200">
           </div>
           <div class="mb-3">
             <label for="body_mass_index" class="form-label disease_label">Body Mass Index (BMI)</label>
-            <input type="number" class="form-control disease-input" id="body_mass_index" aria-describedby="body_mass_index" min="0" max="70.0" placeholder="0 - 70.0">
+            <input type="number" class="form-control disease-input" name="b" id="body_mass_index" aria-describedby="body_mass_index" min="0" max="70.0" placeholder="0 - 70.0">
           </div>
           <div class="mb-3">
             <label for="age" class="form-label disease_label">Age</label>
-            <input type="number" class="form-control disease-input" id="age" aria-describedby="age" min="20" max="100" placeholder="20 - 100">
+            <input type="number" class="form-control disease-input" name="c" id="age" aria-describedby="age" min="20" max="100" placeholder="20 - 100">
           </div>
           <div class="mb-3">
             <label for="pregnancies" class="form-label disease_label">Pregnancies</label>
-            <input type="number" class="form-control disease-input" id="pregnancies" aria-describedby="pregnancies">
+            <input type="number" class="form-control disease-input" name="d" id="pregnancies" aria-describedby="pregnancies">
           </div>  
           <div class="mb-3">
             <label for="diabetes_pedigre_function" class="form-label disease_label">Diabetes Pedigre Function</label>
-            <input type="number" class="form-control disease-input" id="diabetes_pedigre_function" aria-describedby="diabetes_pedigre_function" min="0" max="3.0" placeholder="0 - 3.0">
+            <input type="number" class="form-control disease-input" name="e" id="diabetes_pedigre_function" aria-describedby="diabetes_pedigre_function" min="0.0" max="3.0" placeholder="0 - 3.0" step="0.1">
           </div>
           <div class="mb-3">
             <label for="insulin" class="form-label disease_label">Insulin</label>
-            <input type="number" class="form-control disease-input" id="insulin" aria-describedby="insulin" min="0" max="900" placeholder="0 - 900">
+            <input type="number" class="form-control disease-input" name="f" id="insulin" aria-describedby="insulin" min="0" max="900" placeholder="0 - 900">
           </div>  
         </div>
-        <button type="submit" class="btn btn-outline-primary mt-5">Submit</button>
+        <button type="submit" class="btn btn-outline-primary mt-5" value="diabetes_predict">Submit</button>
       </form>
     </div>
   </div>

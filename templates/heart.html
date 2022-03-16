@@ -11,38 +11,38 @@
       <img src="/static/images/pic13_heart.jpg" alt="Heart" class="disease-img">
     </div>
     <div class="col-6 disease-input-section">
-      <form class="" action="/heart" method="POST">
+      <form class="" action="{{url_for('heart_predict')}}" method="POST">
         <div class="disease-form">
           <div class="mb-3">
             <label for="chest_pain" class="form-label disease_label">Chest Pain</label>
-            <input type="number" class="form-control disease-input" id="chest_pain" aria-describedby="chest_pain" min="0" max="3" placeholder="0 - 3">
+            <input type="number" class="form-control disease-input" name="a" id="chest_pain" aria-describedby="chest_pain" min="0" max="3" placeholder="0 - 3">
           </div>
           <div class="mb-3">
             <label for="maximum_heart_rate" class="form-label disease_label">Maximum Heart Rate</label>
-            <input type="number" class="form-control disease-input" id="maximum_heart_rate" aria-describedby="maximum_heart_rate" min="70.0" max="210.0" placeholder="70.0 - 210.0">
+            <input type="number" class="form-control disease-input" name="b" id="maximum_heart_rate" aria-describedby="maximum_heart_rate" min="70.0" max="210.0" placeholder="70.0 - 210.0">
           </div>
           <div class="mb-3">
             <label for="st_segment" class="form-label disease_label">Slope of peak exercise ST segment</label>
-            <input type="number" class="form-control disease-input" id="st_segment" aria-describedby="st_segment" min="0" max="2" placeholder="0 - 2">
+            <input type="number" class="form-control disease-input" name="c" id="st_segment" aria-describedby="st_segment" min="0" max="2" placeholder="0 - 2">
           </div>
           <div class="mb-3">
             <label for="resti_electrocardiographic_result" class="form-label disease_label">Resting Electrocardiographic Result</label>
-            <input type="number" class="form-control disease-input" id="resti_electrocardiographic_result" aria-describedby="resti_electrocardiographic_result" min="0" max="2.0" placeholder="0 - 2.0">
+            <input type="number" class="form-control disease-input" name="d" id="resti_electrocardiographic_result" aria-describedby="resti_electrocardiographic_result" min="0" max="2.0" placeholder="0 - 2.0">
           </div>
           <div class="mb-3">
             <label for="fasting_blood_sugar" class="form-label disease_label">Fasting Blood Sugar > 120mg/dl</label>
-            <input type="number" class="form-control disease-input" id="fasting_blood_sugar" aria-describedby="fasting_blood_sugar" min="0" max="1.0" placeholder="0 - 1.0">
+            <input type="number" class="form-control disease-input" name="e" id="fasting_blood_sugar" aria-describedby="fasting_blood_sugar" min="0" max="1.0" placeholder="0 - 1.0">
           </div>
           <div class="mb-3">
             <label for="cholesterol" class="form-label disease_label">Cholesterol</label>
-            <input type="number" class="form-control disease-input" id="cholesterol" aria-describedby="cholesterol" min="125.0" max="600.0" placeholder="125.0 - 600.0">
+            <input type="number" class="form-control disease-input" name="f" id="cholesterol" aria-describedby="cholesterol" min="125.0" max="600.0" placeholder="125.0 - 600.0">
           </div>
           <div class="mb-3">
             <label for="resting_blood_pressure" class="form-label disease_label">Resting Blood Pressure</label>
-            <input type="number" class="form-control disease-input" id="resting_blood_pressure" aria-describedby="resting_blood_pressure" min="90.0" max="200.0" placeholder="90.0 - 200.0">
+            <input type="number" class="form-control disease-input" name="g" id="resting_blood_pressure" aria-describedby="resting_blood_pressure" min="90.0" max="200.0" placeholder="90.0 - 200.0">
           </div>
         </div>
-        <button type="submit" class="btn btn-outline-primary mt-5">Submit</button>
+        <button type="submit" class="btn btn-outline-primary mt-5" value="heart_predict">Submit</button>
       </form>
     </div>
   </div>

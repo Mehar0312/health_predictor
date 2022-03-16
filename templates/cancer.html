@@ -11,51 +11,51 @@
       <img src="/static/images/pic11_cancer.jpg" alt="cancer" class="disease-img">
     </div>
     <div class="col-6 disease-input-section">
-      <form class="" action="/cancer" method="POST">
+      <form action="{{url_for('cancer_predict')}}" method="POST">
         <div class="disease-form">
           <div class="mb-3">
             <label for="concave points_worst" class="form-label disease_label">Concave Points Worst</label>
-            <input type="number" class="form-control disease-input" id="concave points_worst" aria-describedby="concave points_worst" min="0.0" max="0.4" placeholder="0.0 - 0.4">
+            <input type="number" class="form-control disease-input" id="concave points_worst" name="a" aria-describedby="concave points_worst" min="0.0" max="2.0" placeholder="0.0 - 0.4" step="0.1">
           </div>
           <div class="mb-3">
             <label for="perimeter_worst" class="form-label disease_label">Perimeter Worst</label>
-            <input type="number" class="form-control disease-input" id="perimeter_worst" aria-describedby="perimeter_worst" min="50.0" max="255.0" placeholder="50.0 - 255.0">
+            <input type="number" class="form-control disease-input" id="perimeter_worst" name='b' aria-describedby="perimeter_worst" min="50.0" max="255.0" placeholder="50.0 - 255.0">
           </div>
           <div class="mb-3">
             <label for="concave points_mean" class="form-label disease_label">Concave Points Mean</label>
-            <input type="number" class="form-control disease-input" id="concave points_mean" aria-describedby="concave points_mean" min="0.0" max="0.2" placeholder="0.0 - 0.2">
+            <input type="number" class="form-control disease-input" id="concave points_mean" name='c' aria-describedby="concave points_mean" min="0.0" max="0.2" placeholder="0.0 - 0.2" step="0.1">
           </div>
           <div class="mb-3">
             <label for="radius_worst" class="form-label disease_label">Radius Worst</label>
-            <input type="number" class="form-control disease-input" id="radius_worst" aria-describedby="radius_worst" min="7.0" max="36.0" placeholder="7.0 - 36.0">
+            <input type="number" class="form-control disease-input" id="radius_worst" name="d" aria-describedby="radius_worst" min="7.0" max="36.0" placeholder="7.0 - 36.0">
           </div>
           <div class="mb-3">
             <label for="perimeter_mean" class="form-label disease_label">Perimeter Mean</label>
-            <input type="number" class="form-control disease-input" id="perimeter_mean" aria-describedby="perimeter_mean" min="40.0" max="190.0" placeholder="40.0 - 190.0">
+            <input type="number" class="form-control disease-input" id="perimeter_mean" name="e" aria-describedby="perimeter_mean" min="40.0" max="190.0" placeholder="40.0 - 190.0">
           </div>
           <div class="mb-3">
             <label for="area_worst" class="form-label disease_label">Area Worst</label>
-            <input type="number" class="form-control disease-input" id="area_worst" aria-describedby="area_worst" min="180" max="4250" placeholder="180 - 4250">
+            <input type="number" class="form-control disease-input" id="area_worst" name="f" aria-describedby="area_worst" min="180" max="4250" placeholder="180 - 4250">
           </div>
           <div class="mb-3">
             <label for="radius_mean" class="form-label disease_label">Radius Mean</label>
-            <input type="number" class="form-control disease-input" id="radius_mean" aria-describedby="radius_mean" min="6.0" max="30.0" placeholder="6.0 - 30.0">
+            <input type="number" class="form-control disease-input" id="radius_mean" name="g" aria-describedby="radius_mean" min="6.0" max="30.0" placeholder="6.0 - 30.0">
           </div>
           <div class="mb-3">
             <label for="area_mean" class="form-label disease_label">Area Mean</label>
-            <input type="number" class="form-control disease-input" id="area_mean" aria-describedby="area_mean" min="140" max="2500" placeholder="140 - 2500">
+            <input type="number" class="form-control disease-input" id="area_mean" name="h" aria-describedby="area_mean" min="140" max="2500" placeholder="140 - 2500">
           </div>
           <div class="mb-3">
             <label for="concavity_mean" class="form-label disease_label">Concavity Mean</label>
-            <input type="number" class="form-control disease-input" id="concavity_mean" aria-describedby="concavity_mean" min="0.0" max="0.5" placeholder="0.0 - 0.5">
+            <input type="number" class="form-control disease-input" id="concavity_mean" name="i" aria-describedby="concavity_mean" min="0.0" max="0.5" placeholder="0.0 - 0.5" step="0.1">
           </div>
           <div class="mb-3">
             <label for="concavity_worst" class="form-label disease_label">Concavity Worst</label>
-            <input type="number" class="form-control disease-input" id="concavity_worst" aria-describedby="concavity_worst" min="0.0" max="0.5" placeholder="0.0 - 0.5">
+            <input type="number" class="form-control disease-input" id="concavity_worst" name="j" aria-describedby="concavity_worst" min="0.0" max="0.5" placeholder="0.0 - 0.5" step="0.1">
           </div>
         </div>
     
-        <button type="submit" class="btn btn-outline-primary mt-5">Submit</button>
+        <button type="submit" class="btn btn-outline-primary mt-5" value="cancer_predict">Submit</button>
       </form>
     </div>
   </div>

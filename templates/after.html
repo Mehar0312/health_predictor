@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Result{% endblock title %}
+
+{% block body %}
+
+<html>
+    <body>
+        <div class="container result">
+            <h1>PREDICTION</h1>
+
+            {%if data == 0%}
+            <h1 class="result-heading">YOU ARE SAFE! </h1>
+            <img class="result-img" src="/static/images/d1.jpg" alt="happy doctor">
+            {%else%}
+            <h1 class="result-heading">YOU ARE NOT SAFE! PLEASE CONSULT A DOCTOR</h1>
+            <img class="result-img" src="/static/images/d2.jpg" alt="sad doctor">
+            {%endif%}
+            
+
+            <br><br>
+            <a href="/">GO back to home page</a>
+        </div>
+    </body>
+</html>
+
+{% endblock body %}
